@@ -5,11 +5,11 @@
  *main - main block
  *Description - Get and print a random number
  *if it is positive, negative, or zero
- *Return 0
+ *Return: Always (0) Success
  */
 
-int main(void)
-{
+int main(void){
+
 	int n;
 
 	srand(time(0));
