@@ -3,7 +3,7 @@
 /**
  * main - Print the sum of even Fibonacci numbers up to a fib value
  * it must not exeed 4,000,000
- * Return 0
+ * Return: 0
  */
 int main(void)
 {
