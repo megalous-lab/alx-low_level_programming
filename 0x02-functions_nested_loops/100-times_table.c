@@ -3,7 +3,7 @@
 /**
  * times_table - Prints time table
  */
-void print_times_table(int n)
+void print_times_table(int)
 {
 	int x, y, k;
 
