@@ -12,19 +12,14 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int len, i;
+	int i, c;
 
-	/* get the length of dest string */
-	for (len = 0; dest[len] != 0; len++)
+	for (i = 0; dest[i] != '\0'; i++)
 		;
 
-	/* append src to dest one character at a time */
-	for (i = 0; i < n; i++)
+	for (c = 0; src[c] != '\0' && n > 0; c++, n--, i++)
 	{
-		dest[len] = src[i];
-		len++;
+		dest[i] = src[c];
 	}
-
-	/* return concatenated string */
 	return (dest);
 }
