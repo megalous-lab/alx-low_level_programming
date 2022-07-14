@@ -10,17 +10,18 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int l, i;
+	int len, i;
 
 	/* get the length of dest string */
-	for (l = 0; dest[l] != 0; l++)
+	for (len = 0; dest[len] != 0; len++)
 		;
 
 	/* append src to dest one character at a time */
 	for (i = 0; i < n; i++)
 	{
-		dest[l] = src[i];
-		l++;
+		dest[len] = src[i];
+		len++;
 	}
+
 	return (dest);
 }
