@@ -2,6 +2,8 @@
 
 /**
  * *_strncat - concatenates two strings
+ * but uses, at most, n bytes from src, and src does not need to be
+ * null-terminated if it contains n or more bytes
  * @src: string to append to dest
  * @dest: string to concatenate with src
  * @n: number of bytes to append
@@ -23,5 +25,6 @@ char *_strncat(char *dest, char *src, int n)
 		len++;
 	}
 
+	/* return concatenated string */
 	return (dest);
 }
