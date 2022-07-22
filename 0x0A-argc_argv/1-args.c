@@ -10,7 +10,17 @@
 
 int main(int argc,__attribute__((unused)) char *argv[])
 {
-	printf("%d\n", argc);
-	
+	int n;
+
+	if (argc == 1)
+		printf("%d\n", argc - 1);
+	else
+	{
+		for (n == 0, *argv; n++, argv++)
+			;
+
+		printf("%d\n" n - 1);
+	}
+
 	return (0);
 }
